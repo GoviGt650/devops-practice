@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spring App</title>
+
+<link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+
+<body class="d-flex justify-content-center align-items-center vh-100" style="background-color: #1b1e1f;">
+
+<div class="text-center">
+
+    <form th:action="@{/press}" method="post">
+        <button class="btn btn-primary btn-lg px-5 py-3 shadow" type="submit">
+            Press Here
+        </button>
+    </form>
+
+    <!-- <p th:if="${press}"
+       class="mt-4 h4 text-success font-weight-bold border rounded p-3 bg-white shadow-sm"
+       th:text="${press}">
+    </p> -->
+    <!-- <p th:if="${press}"
+        class="mt-4 h4 text-success font-weight-bold"
+        th:text="${press}">
+    </p> -->
+    <p th:if="${press}"
+        class="mt-4 h4 text-success font-weight-bold"
+        th:text="${press}"
+        style="white-space: pre-line;">
+    </p>
+</div>
+
+</body>
+
+</html>
