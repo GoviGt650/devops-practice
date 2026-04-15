@@ -16,7 +16,7 @@ public class DefaultController {
 
     @RequestMapping(method = RequestMethod.POST)
     public String press(Model model) {
-        model.addAttribute("press", "Congratulations! You are really becoming a Great Devops Engineer!\n- By Learning from Hacker ☠️");
+        model.addAttribute("press", "Hello! I am Govind Jadapalli\n-☠️");
         return "index";
     }
 }
